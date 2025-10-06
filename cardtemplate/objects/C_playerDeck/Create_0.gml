@@ -1,6 +1,11 @@
 playerDeck = []
 playerHand = []
+playerVisualHand = []
 playerDiscardPile = []
+
+playfield_w = 910
+playfield_xpos = []
+
 
 // Create the player deck from the loaded deck
 
@@ -13,6 +18,9 @@ shuffle_deck(playerDeck)
 
 // draw initial cards
 draw_to_hand(playerDeck,playerHand)
+
+// redraws physical cards to screen
+event_user(3)
 
 
 
